@@ -1,15 +1,24 @@
 {
   "parserOptions": {
-    "ecmaVersion": 9,
+    "ecmaFeatures": {
+        "jsx": true,
+        "modules": true
+    },
     "sourceType": "module"
   },
+  "parser": "babel-eslint",
   "env": {
     "es6": true,
     "browser": true,
     "jest": true
   },
+  "plugins": [
+    "babel",
+    "react"
+  ],
   "extends": [
-    "eslint:recommended"
+    "eslint:recommended",
+    "plugin:react/recommended"
   ],
   "rules": {
     "no-console": "warn",
