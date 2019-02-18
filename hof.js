@@ -43,10 +43,41 @@ function curryMultiply(a){
   };
 }
 
+// useful in the front end when changing state to allow the value to be cached so that the reloading of the page is not visible to the user
+function memoize(fn) {
+  let lastArgs = null;
+  let lastResult = null;
+  return function() {
+    const args = [...arguments];
+    // if args and lastArgs are the same
+    if(lastArgs && lastArgs.every((arg, i) => arg === args[i])) {
+      console.log('from last result');
+      return lastResult;
+    }
+    console.log('invoke again');
+    // return lastResult
+
+    // otherwise
+    // store lastArgs
+    lastArgs = args;
+    // invoke fn and store lastResult
+    // fn.apply(null, args);
+    lastResult = fn(... args);
+    // return result
+    return lastResult;
+  };
+}
+
+// const memoAdd = memoize(add);
+
+// memoAdd(1, 2, 3);
+// memoAdd(1, 2, 3);
+
 module.exports = {
   numCalled,
   partAdd,
   add,
   curryAdd,
-  curryMultiply
+  curryMultiply,
+  memoize
 };

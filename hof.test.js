@@ -2,7 +2,8 @@ const {
   numCalled,
   partAdd,
   add,
-  curryMultiply
+  curryMultiply,
+  memoize
 } = require('./hof');
 
 describe('HOF tests', () => {
@@ -38,5 +39,19 @@ describe('HOF tests', () => {
 
     expect(result).toEqual(720);
     expect(result2).toEqual(24);
+  });
+
+  it('can memoize a value', () => {
+    const fn = jest.fn();
+
+    const memoFn = memoize(fn);
+    memoFn(1, 2);
+    memoFn(1, 2);
+    memoFn(1, 2);
+    memoFn(1, 2);
+    memoFn(1, 2);
+    memoFn(1, 2);
+
+    expect(fn).toHaveBeenCalledTimes(1);
   });
 });
