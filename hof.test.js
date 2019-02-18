@@ -1,6 +1,8 @@
 const {
   numCalled,
-  partAdd
+  partAdd,
+  add,
+  curryMultiply
 } = require('./hof');
 
 describe('HOF tests', () => {
@@ -14,11 +16,27 @@ describe('HOF tests', () => {
   });
 
   it('partially applies the add function', () => {
-    const add2 = partAdd(2);
+    const addThirdArg = partAdd(2, 3);
 
-    expect(add2(3)).toEqual(5);
-    expect(add2(5)).toEqual(7);
-    expect(add2(7)).toEqual(9);
-    expect(add2(9)).toEqual(11);
+    expect(addThirdArg(3)).toEqual(8);
+  });
+  
+  it('can use bind to add', () => {
+    const add100 = add.bind(null,  100, 1);
+    
+    expect(add100(30)).toEqual(131);
+  });
+
+  it('can curry multiply', () => {
+    const multiply2 = curryMultiply(2);
+    const multiply3 = multiply2(3);
+    const multiply4 = multiply3(4);
+    const multiply5 = multiply4(5);
+    const result = multiply5(6);
+
+    const result2 = curryMultiply(1)(2)(3)(4)(1);
+
+    expect(result).toEqual(720);
+    expect(result2).toEqual(24);
   });
 });
