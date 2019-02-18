@@ -1,6 +1,7 @@
 .footer {
   background: red;
   border: 2px dashed purple;
+  font-family: Helvetica;
   span {
     color: green;
   }

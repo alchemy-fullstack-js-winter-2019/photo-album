@@ -1,7 +1,7 @@
 .header {
   background-color: cyan;
   font-weight: bold;
-
+  font-family: Helvetica;
   h1 {
     color: red;
   }
