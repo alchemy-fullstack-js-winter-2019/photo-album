@@ -10,21 +10,40 @@
 // console.log(add2(3));
 
 
-function multiply(a, b, c, d, e) {
-  return a * b * c * d * e;
-}
+// function multiply(a, b, c, d, e) {
+//   return a * b * c * d * e;
+// }
+// function curryMultiply(a) {
+//   return function(b) {
+//     return function(c) {
+//       return function(d) {
+//         return function(e) {
+//           return multiply(a, b, c, d, e);
+//         };
+//       };
+//     };
+//   };
+// }
+// const stephCurry = curryMultiply(2);
+// console.log(stephCurry(2)(3)(4)(5));
 
-function curryMultiply(a) {
-  return function(b) {
-    return function(c) {
-      return function(d) {
-        return function(e) {
-          return multiply(a, b, c, d, e);
-        };
-      };
-    };
-  };
-}
+// function memoize(fn) {
+//   let lastArgs = null;
+//   let lastResult = null;
+//   return function memoFn(args) {
+//     if(args === lastArgs) { this line is incorrect
+//       return lastResult;
+//     }
+//     else {
+//       const results = fn(args);
+//       lastResult = results;
+//       lastArgs = args;
+//       return results;
+//     }
+//   };
+// }
 
-const stephCurry = curryMultiply(2);
-console.log(stephCurry(2)(3)(4)(5));
+
+
+
+
