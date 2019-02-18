@@ -1,0 +1,7 @@
+.footer {
+  background: red;
+  border: 2px dashed purple;
+  span {
+    color: green;
+  }
+}
