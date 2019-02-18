@@ -14,9 +14,12 @@
 
 import React from 'react';
 import { render } from 'react-dom';
-import App from './components/App';
+// import App from './components/App';
+import AppTwo from './components/AppTwo';
 
 render(
-  <App />, // this is 'jsx'
-  document.getElementById('root')
+  // <App />, // this is 'jsx'
+  // document.getElementById('root')
+  <AppTwo />,
+  document.getElementById('rootTwo')
 );
