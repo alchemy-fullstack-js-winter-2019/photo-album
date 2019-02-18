@@ -1,0 +1,27 @@
+{
+  "name": "photo-album",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest --verbose --runInBand --detectOpenHandles",
+    "test:watch": "jest --watch --verbose --runInBand --detectOpenHandles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paigeegorry/photo-album.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paigeegorry/photo-album/issues"
+  },
+  "homepage": "https://github.com/paigeegorry/photo-album#readme",
+  "devDependencies": {
+    "jest": "^24.1.0"
+  }
+}
