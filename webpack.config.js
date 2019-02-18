@@ -1,7 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
-
 // eslint-disable-next-line no-undef
 module.exports = {
   entry: './src/index.js',
@@ -13,7 +12,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({ template: './src/index.html' }), 
-    new CleanWebpackPlugin('./dist')
+    new CleanWebpackPlugin('./dist'),
   ],
   module: {
     rules:[
@@ -32,7 +31,31 @@ module.exports = {
         }
       },
       {
-        test: /\.css$/
+        test: /\.css$/,
+        use: [
+          {
+            loader: 'style-loader',
+            options: { sourceMap: true }
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true,
+              modules: true,
+              importLoaders: 1
+            }
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              sourceMap: true,
+              plugin: [
+                require('autoprefixer')(),
+                require('postcss-nested')()
+              ]
+            }
+          }
+        ]
       }
     ]
   }

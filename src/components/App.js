@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
-import Header from './header';
-import Footer from './footer';
-import Dogs from './dogs';
+import Header from './Header';
+import Footer from './Footer';
+import Dogs from './Main';
 
 function App() {
   const dogNames = ['scrappy', 'snoopy', 'sloopy', 'slappy', 'sigmund'];
