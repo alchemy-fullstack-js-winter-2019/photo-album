@@ -1,4 +1,4 @@
-const { counter, partialAdd } = require('./hof');
+const { counter, curryMultiple, curryFive, partialAdd, threeAdd } = require('./hof');
 
 describe ('counter', () => {
   it('counts the number of times', () => {
@@ -15,5 +15,16 @@ describe ('counter', () => {
     expect(add2(2)).toEqual(4);
     expect(add2(4)).toEqual(6);
     expect(add2(1)).toEqual(3);
+  })
+  it('takes three parameters', () => {
+    const three2 = threeAdd(3, 2);
+
+    expect(three2(0)).toEqual(5)
+  })
+  it('multiples two numbers', () => {
+    const multi = curryMultiple(2, 4);
+    expect(multi(2)).toEqual(16);
+    expect(multi(3)).toEqual(24);
+    expect(multi(4)).toEqual(32);
   })
 })
