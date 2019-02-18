@@ -1,14 +1,13 @@
 import React from 'react';
 
 function Main() {
+  const listOfDogs = ['chompers', 'rover', 'cheddar', 'bailey', 'charlie'].map(name => {
+    return <li key={name}>{name}</li>;
+  });
   return (
-  <ul> 
-        <li> Chompers </li>
-        <li> Cheddar </li>
-        <li> Bailey </li>
-        <li> Cookie </li>
-        <li> Charlie </li>
-      </ul>
+    <ul>
+      {listOfDogs}
+    </ul>
   );
 }
 
