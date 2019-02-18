@@ -1,0 +1,10 @@
+.header {
+  background: indigo;
+  padding: 20px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+
+  h1 {
+    color: white;
+  }
+}

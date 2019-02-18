@@ -1,13 +1,15 @@
 import React, { Fragment } from 'react';
 import Header from './Header';
 import Footer from './Footer';
-import Main from './Main';
+import Dogs from './Main';
+import 'normalize.css';
 
 function App() {
+  const dogNames = ['Penelope', 'Peppa', 'Pepperoni', 'Pineapple', 'Perogi'];
   return (
     <Fragment>
       <Header />
-      <Main />
+      <Dogs dogs={dogNames} />
       <Footer />
     </Fragment>
   );
