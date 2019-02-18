@@ -1,9 +1,11 @@
 import React from 'react';
+import styles from './Header.css';
 
 function Header() {
+  
   return (
-    <header>
-      <h1>My First React App</h1>
+    <header className={styles.header}>
+      <h1>Teonna's Dogs</h1>
     </header>
   );
 }

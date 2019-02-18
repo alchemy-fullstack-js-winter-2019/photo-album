@@ -1,6 +1,7 @@
 const HtmlPlugin = require('html-webpack-plugin');
 const CleanPlugin = require('clean-webpack-plugin');
 
+/* eslint-disable-next-line */
 module.exports = {
   entry: './src/index.js',
   output: {
@@ -25,6 +26,32 @@ module.exports = {
             cacheDirectory: true
           }
         }
+      },
+      {
+        test: /\.css/,
+        use: [
+          {
+            loader: 'style-loader',
+            options: { sourceMap: true }
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true,
+              modules: true
+            }
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              sourceMap: true,
+              plugins: [
+                require('autoprefixer')(),
+                require('postcss-nested')()
+              ]
+            }
+          }
+        ]
       }
     ]
   }

@@ -1,22 +1,18 @@
 import React from 'react';
 import Header from './Header';
-
+import List from './List';
+import Footer from './Footer';
 
 function App() {
-  const listOfDogs = ['Indy', 'Jasmine', 'Lady'].map(name => {
-    return <li key ={name}>{name}</li>;
-  });
+  const dogNames = ['Indy', 'Jasmine', 'Lady'];
   
   return (
     <>
-      <Header/>
-      <ul>
-        {listOfDogs}
-      </ul>
-      
+      <Header />
+      <List dogs={dogNames} />
+      <Footer />
     </>
   );
-
 }
 
 export default App;
