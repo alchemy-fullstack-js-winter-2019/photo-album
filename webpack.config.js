@@ -43,7 +43,7 @@ module.exports = {
             loader: 'postcss-loader',
             options: {
               sourceMap: true,
-              plugin: [
+              plugins: [
                 require('autoprefixer')(),
                 require('postcss-nested')()
               ]
