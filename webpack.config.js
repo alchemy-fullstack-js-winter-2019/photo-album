@@ -1,6 +1,7 @@
 const HtmlPlugin = require('html-webpack-plugin');
 const CleanPlugin = require('clean-webpack-plugin');
 
+// eslint-disable-next-line
 module.exports = {
   entry: './src/index.js',
   output: {
@@ -21,7 +22,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env'],
+            presets: ['@babel/preset-env', '@babel/preset-react'],
             cacheDirectory: true
           }
         }
