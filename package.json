@@ -1,0 +1,30 @@
+{
+  "name": "photo-album",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hof.js",
+  "scripts": {
+    "test": "jest",
+    "build": "webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crperezchica/photo-album.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crperezchica/photo-album/issues"
+  },
+  "homepage": "https://github.com/crperezchica/photo-album#readme",
+  "devDependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "babel-loader": "^8.0.5",
+    "eslint": "^5.14.1",
+    "jest": "^24.1.0",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3"
+  }
+}
