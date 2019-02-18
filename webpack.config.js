@@ -1,6 +1,6 @@
 const HtmlPlugin = require('html-webpack-plugin');
 //takes the template html and create for us
-const CleanPlugin = require('clean-webpack-plugin')
+const CleanPlugin = require('clean-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -23,7 +23,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env'],
+            presets: ['@babel/preset-env', '@babel/preset-react'],
             cacheDirectory: true
           }
         }
