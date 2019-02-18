@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "build": "webpack -p"
+    "build": "webpack -p",
+    "start": "webpack-dev-server --hot --mode development"
   },
   "repository": {
     "type": "git",
@@ -18,9 +19,7 @@
     "url": "https://github.com/kristinhortsch/photo-album/issues"
   },
   "homepage": "https://github.com/kristinhortsch/photo-album#readme",
-  "dependencies": {
-    "jest": "^24.1.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.3.3",
     "@babel/preset-env": "^7.3.1",
@@ -28,7 +27,9 @@
     "clean-webpack-plugin": "^1.0.1",
     "eslint": "^5.14.1",
     "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.1.0",
     "webpack": "^4.29.5",
-    "webpack-cli": "^3.2.3"
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
   }
 }
