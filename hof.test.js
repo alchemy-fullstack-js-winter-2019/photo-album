@@ -1,4 +1,5 @@
-const { counter, curryMultiple, curryFive, partialAdd, threeAdd } = require('./hof');
+/* eslint-disable-next-line */
+const { counter, curryMultiple, memo, partialAdd, threeAdd } = require('./hof');
 
 describe ('counter', () => {
   it('counts the number of times', () => {
@@ -27,4 +28,12 @@ describe ('counter', () => {
     expect(multi(3)).toEqual(24);
     expect(multi(4)).toEqual(32);
   })
-})
+  it('calls the function', () => {
+    const fn = jest.fn();
+    const memoFn = memo(fn);
+    memoFn(1, 2);
+    memoFn(1, 2);
+    expect(fn).toHaveBeenCalledTimes(1);
+
+  })
+});
