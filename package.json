@@ -1,0 +1,27 @@
+{
+  "name": "photo-album",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "jest --verbose --runInBand --detectOpenHandles",
+    "test:watch": "jest --watch --verbose --runInBand --detectOpenHandles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caripizza/photo-album.git"
+  },
+  "keywords": [],
+  "author": "Cari Palazzolo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caripizza/photo-album/issues"
+  },
+  "homepage": "https://github.com/caripizza/photo-album#readme",
+  "devDependencies": {
+    "eslint": "^5.14.1",
+    "jest": "^24.1.0"
+  }
+}
