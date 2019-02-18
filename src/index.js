@@ -1,10 +1,12 @@
-const root = document.getElementById('root');
-const ul = document.createElement('ul');
-root.appendChild(ul);
-['Scruffy', 'Buddy', 'Milo', 'Coco', 'Muffin'].map(name=> {
-  const li = document.createElement('li');
-  li.textContent = name;
-  return li;
-})
-.forEach(li => ul.appendChild(li));
+import React from 'react';
+import { render } from 'react-dom';
+import App from './components/App';
+
+//render allows us to append a child
+//only render once
+render(
+  <App />,
+  //append to root
+  document.getElementById('root')
+);
 
