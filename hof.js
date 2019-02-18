@@ -11,19 +11,19 @@
 
 
 function multiply(a, b, c, d, e) {
-    return a * b * c * d * e;
+  return a * b * c * d * e;
 }
 
 function curryMultiply(a) {
-    return function(b) {
-        return function(c) {
-            return function(d) {
-                return function(e) {
-                    return multiply(a, b, c, d, e);
-                }
-            }
-        }
-    }
+  return function(b) {
+    return function(c) {
+      return function(d) {
+        return function(e) {
+          return multiply(a, b, c, d, e);
+        };
+      };
+    };
+  };
 }
 
 const stephCurry = curryMultiply(2);
