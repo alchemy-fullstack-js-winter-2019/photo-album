@@ -6,12 +6,6 @@ function AppTwo() {
   });
   
   return (
-    // <ul>
-    //   <h1>I am a second title</h1>
-    //   <li>Chunky</li>
-    //   <li>Sparky</li>
-    //   <li>Taco</li>
-    // </ul>
     <ul>{listOfDogs}</ul>
   );
 }

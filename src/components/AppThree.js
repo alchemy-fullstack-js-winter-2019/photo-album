@@ -5,24 +5,12 @@ import Main from './Main';
 import Dogs from './Dogs';
 
 function AppThree() {
-  const dogNames = [ 'rover', 'spot', 'sparky'];
-  // const listOfThings = ['one', 'two', 'three'].map(thing => {
-  //   return <li key={thing}>{thing}</li>;
-  // });
+  const dogNames = ['rover', 'spot', 'sparky'];
   return (
     <>
-      {/* <header>
-        <h1>Title of my site</h1>
-      </header> */}
       <Header />
-      {/* <main>
-        <ul>{listOfThings}</ul>
-      </main> */}
       <Dogs dogs={dogNames} />
       <Main />
-      {/* <footer>
-        <span>Cari Palazzolo</span>
-      </footer> */}
       <Footer />
     </>
   );

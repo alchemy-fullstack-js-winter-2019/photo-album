@@ -14,5 +14,5 @@ function Dogs({ dogs }) {
 
 Dogs.propTypes = {
   dogs: PropTypes.array.isRequired
-}
+};
 export default Dogs;

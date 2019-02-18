@@ -1,0 +1,8 @@
+.header {
+  background-color: cyan;
+  font-weight: bold;
+
+  h1 {
+    color: red;
+  }
+}
