@@ -1,19 +1,16 @@
 import React, { Fragment } from 'react';
+import Header from './header';
+import Footer from './footer';
+import Dogs from './dogs';
 
 function App() {
-  const dogNames = ['scrappy', 'snoopy', 'sloopy', 'slappy', 'sigmund'].map(name => {
-    return <li key={name}>{name}</li>;
-  });
+  const dogNames = ['scrappy', 'snoopy', 'sloopy', 'slappy', 'sigmund'];
 
   return (
     <Fragment>
-      <header>
-        <h1>My Dog Site</h1>
-      </header>
-      <ul>
-        {dogNames}
-      </ul>
-      <footer>Kate</footer>
+      <Header />
+      <Dogs dogs={dogNames} />
+      <Footer />
     </Fragment>
   );
 }
