@@ -34,7 +34,8 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
-    "build": "webpack -p"
+    "build": "webpack -p",
+    "start": "webpack-dev-server --hot --mode-development"
   },
   "repository": {
     "type": "git",
