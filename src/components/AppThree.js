@@ -1,20 +1,26 @@
 import React from 'react';
+import Header from './Header';
+import Footer from './Footer';
+import Main from './Main';
 
 function AppThree() {
-  const listOfThings = ['one', 'two', 'three'].map(thing => {
-    return <li key={thing}>{thing}</li>;
-  });
+  // const listOfThings = ['one', 'two', 'three'].map(thing => {
+  //   return <li key={thing}>{thing}</li>;
+  // });
   return (
     <>
-      <header>
+      {/* <header>
         <h1>Title of my site</h1>
-      </header>
-      <main>
+      </header> */}
+      <Header />
+      {/* <main>
         <ul>{listOfThings}</ul>
-      </main>
-      <footer>
+      </main> */}
+      <Main />
+      {/* <footer>
         <span>Cari Palazzolo</span>
-      </footer>
+      </footer> */}
+      <Footer />
     </>
   );
 }
