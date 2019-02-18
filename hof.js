@@ -68,10 +68,10 @@ function memoize(fn) {
   };
 }
 
+// add any function to the memoize function to cache last results
 // const memoAdd = memoize(add);
+// memoAdd(1, 2, 3);
 
-// memoAdd(1, 2, 3);
-// memoAdd(1, 2, 3);
 
 module.exports = {
   numCalled,
