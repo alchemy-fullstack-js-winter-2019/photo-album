@@ -8,7 +8,7 @@ HINT: You'll need a closure.
 
 ## Partial application
 
-* create an add function:
+ create an add function:
 
 ```js
 function add(a, b) {
@@ -16,7 +16,7 @@ function add(a, b) {
 }
 ```
 
-* create another function that partially applies the add function
+ create another function that partially applies the add function
 
 ## BONUS: Memoize function
 
