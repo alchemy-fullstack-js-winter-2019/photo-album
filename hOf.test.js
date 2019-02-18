@@ -1,4 +1,12 @@
-const { add, counter, partialAdd, partialApply } = require('./hOf');
+const {
+  add,
+  counter,
+  partialAdd,
+  partialApply,
+  // curryAdd,
+  curryMultiply,
+  memoize
+} = require('./hOf');
 
 describe('counter function', () => {
   it('counts number of times it was called', () => {
@@ -24,5 +32,17 @@ describe('counter function', () => {
   it('partially applies addd', () => {
     const add5 = partialApply(2, 3);
     expect(add5(5)).toEqual(10);
+  });
+
+  it('curries a multiply function', () => {
+    expect(curryMultiply(2)(2)(3)(4)(1)).toEqual(48);
+  });
+
+  it('memoizes a function', () => {
+    const fn = jest.fn();
+    const memoFn = memoize(fn);
+    memoFn(1, 2);
+    memoFn(1, 2);
+    expect(fn).toHaveBeenCalledTimes(1);
   });
 });
