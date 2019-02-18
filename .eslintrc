@@ -3,14 +3,19 @@
       "ecmaVersion": 9,
       "sourceType": "module"
     },
+    "plugins": [
+      "babel",
+      "react"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended"
+    ],
     "env": {
       "es6": true,
-      "node": true,
+      "browser": true,
       "jest": true
     },
-    "extends": [
-      "eslint:recommended"
-    ],
     "rules": {
       "no-console": "warn",
       "indent": [
