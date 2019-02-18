@@ -1,12 +1,11 @@
-const root = document.getElementById('root');
-const ul = document.createElement('ul');
-root.appendChild(ul);
+import React from 'react';
+import { render } from 'react-dom';
+import App from './components/App';
+
+render(
+  <App />,
+  document.getElementById('root')
+ 
+);
 
 
-['Lady', 'Jasmine', 'Indy', 'Bandit', 'Rocky']
-  .map(name => {
-    const li = document.createElement('li');
-    li.textContent = name;
-    return li;
-  })
-  .forEach(li => ul.appendChild(li));
