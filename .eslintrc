@@ -5,11 +5,16 @@
   },
   "env": {
     "es6": true,
-    "node": true,
+    "browser": true,
     "jest": true
   },
+  "plugins": [
+    "babel",
+    "react"
+  ],
   "extends": [
-    "eslint:recommended"
+    "eslint:recommended",
+    "plugin:react/recommended"
   ],
   "rules": {
     "no-console": "warn",
