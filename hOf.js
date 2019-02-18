@@ -1,3 +1,4 @@
+// this is only impure function; it holds state somewhere
 function counter() {
   let count = 0;
   return function() {
@@ -62,8 +63,10 @@ function memoize(fn) {
   return () => {
     const args = [...arguments];
     if(lastArgs && lastArgs.every((arg, i) => arg === args[i])) {
+      console.log('from last result');
       return lastResult;
     } else {
+      console.log('invoke again');
       lastArgs = args;
       lastResult = fn(...args);
       //or: lastResult = fn.apply(null, args);
@@ -71,6 +74,13 @@ function memoize(fn) {
     }
   };
 }
+
+const memoAdd = memoize(add);
+memoAdd(1, 2, 3);
+memoAdd(1, 2, 3);
+memoAdd(1, 2, 3);
+memoAdd(1, 2, 3);
+memoAdd(1, 2, 3);
 
 module.exports = {
   add,
