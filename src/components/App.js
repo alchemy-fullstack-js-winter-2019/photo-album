@@ -1,13 +1,14 @@
 import React from 'react';
 import Header from './Header';
-import Main from './Main';
+import Dogs from './Dogs';
 import Footer from './Footer';
 
 function App() {
+  const names = ['auffy', 'buffy', 'cuffy', 'duffy', 'effy'];
   return (
     <>
       <Header />
-      <Main />
+      <Dogs dogs={names}/>
       <Footer />
     </>
   );
