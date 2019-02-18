@@ -1,4 +1,6 @@
 import React from 'react';
+import Header from './Header';
+
 
 function App() {
   const listOfDogs = ['Indy', 'Jasmine', 'Lady'].map(name => {
@@ -7,15 +9,11 @@ function App() {
   
   return (
     <>
-      <header>
-        <h1>My First React App</h1>
-      </header>
+      <Header/>
       <ul>
         {listOfDogs}
       </ul>
-      <footer>
-        Footer
-      </footer>
+      
     </>
   );
 
