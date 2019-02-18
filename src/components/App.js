@@ -1,17 +1,17 @@
 import React, { Fragment }from 'react';
 import Header from './Header';
+import Dogs from './Dogs';
+import Footer from './Footer';
+import 'normalize.css';
 
 function App() {
-  const listOfDogs = ['Scruffy', 'Buddy', 'Coco', 'Milo', 'Jack'].map(name => {
-    return <li>{name}</li>;
-  });
+  const dogNames = ['Scruffy', 'Buddy', 'Coco', 'Milo', 'Jack'];
+
   return (
     <Fragment>
       <Header />
-        <ul>
-          {listOfDogs}
-        </ul>
-      <footer>Dyanna</footer>
+      <Dogs dogs={dogNames} />
+      <Footer />
   </Fragment>
   );
 }
