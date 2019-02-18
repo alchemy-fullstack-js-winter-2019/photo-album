@@ -1,0 +1,25 @@
+{
+  "name": "photo-album",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hof.js",
+  "dependencies": {
+    "eslint": "^5.14.1",
+    "jest": "^24.1.0",
+    "react": "^16.8.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcysilverman/photo-album.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcysilverman/photo-album/issues"
+  },
+  "homepage": "https://github.com/marcysilverman/photo-album#readme"
+}
