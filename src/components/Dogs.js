@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './Dogs.css';
 
 function Dogs({ dogs }) {
   const listNames = dogs.map(name =>
@@ -7,7 +8,7 @@ function Dogs({ dogs }) {
   );
 
   return (
-    <ul>{listNames}</ul>
+    <ul className={styles.main}>{listNames}</ul>
   );
 }
 
