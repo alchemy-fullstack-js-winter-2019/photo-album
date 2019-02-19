@@ -1,13 +1,14 @@
 import React from 'react';
 import Photos from './Photos';
 import PropTypes from 'prop-types';
+import styles from './PhotoAlbum.css';
 
 
 function PhotoAlbum({ urls }) {
 
   return (
-    <div>
-      <h1>PhotoAlbum</h1>
+    <div className={styles.div}>
+      <h1 >PhotoAlbum</h1>
       <Photos urls={urls} />
     </div>
   );

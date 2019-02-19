@@ -27,7 +27,7 @@ describe('counter', () => {
 
   it('partial applies add', () => {
     const addPart = partialAdd(2, 3);
-    const add4 = partialAdd(2,2);
+    const add4 = partialAdd(2, 2);
 
     expect(addPart(0)).toEqual(5);
 
@@ -56,5 +56,5 @@ describe('counter', () => {
     memoFn(1, 2); 
 
     expect(fn).toHaveBeenCalledTimes(1);
-  })
-})
+  });
+});

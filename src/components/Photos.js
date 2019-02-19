@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Photo from './Photo';
+import styles from './Photos.css';
 
 
 function Photos({ urls }) {
@@ -8,7 +9,7 @@ function Photos({ urls }) {
     return <li key={name}><Photo url={url} /></li>;
   });
   return (
-    <ul>
+    <ul className={styles.ul}>
 
       {photoList}
     </ul>
