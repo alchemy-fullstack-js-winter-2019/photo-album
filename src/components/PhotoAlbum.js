@@ -7,6 +7,7 @@ function PhotoAlbum({ photos }) {
   return (
     <main className={styles.main}>
       <h2>planetz</h2>
+      <p>(psst hover over a planet!)</p>
       <Photos urls={photos}/>
     </main>
   );
