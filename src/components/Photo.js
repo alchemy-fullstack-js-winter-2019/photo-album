@@ -1,10 +1,15 @@
 import React from 'react';
-import pet1 from '../assets/IMG_0053.jpg';
+import PropTypes from 'prop-types';
 
-function Photo() {
+function Photo({ urls, title }) {
   return (
-    <img src={pet1}></img>
+   
   );
 }
+
+Photo.propTypes = {
+  urls: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired
+};
 
 export default Photo;

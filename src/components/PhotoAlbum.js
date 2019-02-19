@@ -1,17 +1,19 @@
 import React from 'react';
+import Photos from './Photos';
 import PropTypes from 'prop-types';
 import styles from './Main.css';
 
-function PhotoAlbum({ photos }) {
+function PhotoAlbum({ urls }) {
   
   return (
     <ul className={styles.list}>
+      <Photos />
     </ul>
   );
 }
 
 PhotoAlbum.propTypes = {
-  photos: PropTypes.array.isRequired
+  urls: PropTypes.array.isRequired
 };
 
 export default PhotoAlbum;
