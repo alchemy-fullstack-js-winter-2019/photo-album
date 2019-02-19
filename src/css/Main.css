@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+* {
+  font-family: 'Rubik', sans-serif;
+}
+img {
+  height: 100%;
+  width: 100%;
+}
+ul {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 0;
+  grid-gap: 20px;
+}
+li {
+  list-style-type: none;
+  position: relative;
+}
+
+li:nth-child(5n) {
+  grid-column: span 2;
+  grid-row: span 1;
+
+}
+
+@media only screen and (max-width: 375px) {
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    height: 200px;
+    width: 350px;
+    list-style-type: none;
+  }
+  * {
+    padding: 0;
+  }
+  li:nth-child(5n) {
+    grid-column: span 1;
+    grid-row: span 1;
+  
+  }
+}
+
+@media only screen and (max-width: 414px) {
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    height: 250px;
+    width: 375px;
+    list-style-type: none;
+  }
+  * {
+    padding: 0;
+  }
+  li:nth-child(5n) {
+    grid-column: span 1;
+    grid-row: span 1;
+  
+  }
+}
