@@ -2,7 +2,8 @@
   background: red;
   border: 2px dashed purple;
   font-family: Helvetica;
-  span {
+  text-align: center;
+  p {
     color: green;
   }
 }

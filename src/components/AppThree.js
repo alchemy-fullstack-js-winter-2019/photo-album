@@ -6,13 +6,15 @@ import Dogs from './Dogs';
 import 'normalize.css';
 
 function AppThree() {
+  const name = 'Cari Palazzolo';
+  const title = 'Cari\'s amazing app';
   const dogNames = ['rover', 'spot', 'sparky'];
   return (
     <>
-      <Header />
+      <Header title={title}/>
       <Dogs dogs={dogNames} />
       <Main />
-      <Footer />
+      <Footer name={name} />
     </>
   );
 }
