@@ -10,7 +10,7 @@ function Photos({ url }) {
   });
   return (
     <ul>
-      <li>{urlList}</li>
+      {urlList}
     </ul>
   );
 
