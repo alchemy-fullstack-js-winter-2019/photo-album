@@ -1,0 +1,9 @@
+.footer {
+  background-color: lightsteelblue;
+  color: white;
+
+  p {
+    color: red;
+    text-align: center;
+  }
+}

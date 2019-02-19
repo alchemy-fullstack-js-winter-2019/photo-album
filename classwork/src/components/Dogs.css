@@ -1,0 +1,8 @@
+.main {
+  background-color: orange;
+  color: white;
+
+  li {
+    color: yellow;
+  }
+}
