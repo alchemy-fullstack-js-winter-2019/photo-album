@@ -8,7 +8,7 @@ function Photo({ dog }) {
   );
 }
 
-Photo.PropTypes = {
+Photo.propTypes = {
   dog: PropTypes.string.isRequired
 };
 

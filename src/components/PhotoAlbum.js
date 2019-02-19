@@ -1,19 +1,20 @@
 import React from 'react';
-import styles from './List.css';
-import dog from '../assets/dog.jpeg';
-import dog2 from '../assets/dog2.jpeg';
-import dog3 from '../assets/dog3.jpeg';
-import dog4 from '../assets/dog4.jpeg';
-import dog5 from '../assets/dog5.jpeg';
-import dog6 from '../assets/dog6.jpeg';
+// import styles from './List.css';
+import PropTypes from 'prop-types';
+import Photos from './Photos';
 
-const dogs = [dog, dog2, dog3, dog4, dog5, dog6];
-
-function PhotoAlbum() {
+function PhotoAlbum({ dogs }) {
+  
   return (
-    <ul className={styles.list}>
-    </ul>
+    <>
+      <Photos dogs={ dogs }/>
+    </>
   );
 }
+
+PhotoAlbum.propTypes = {
+  dogs: PropTypes.array.isRequired
+};
+
 
 export default PhotoAlbum;
