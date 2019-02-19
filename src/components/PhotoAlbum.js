@@ -1,7 +1,7 @@
 import React from 'react';
 import Photos from './Photos';
-// import Photo from './Photo';
 import PropTypes from 'prop-types';
+import styles from './PhotoAlbum.css';
 
 // PhotoAlbum component should take a 
 // title and an array of urls. It should 
@@ -9,14 +9,10 @@ import PropTypes from 'prop-types';
 // the array of urls using the Photos component
 
 function PhotoAlbum({ title, urls }) {
-  // const photo1 = '/src/assets/ms20.jpg';
-  // const photo2 = '/src/assets/kitten.jpg';
-  // const photo3 = '/src/assets/roland_juno6.jpg';
-  // const photos = [photo1, photo2, photo3];
   return (
     <>
-      <h1>{title}</h1>
-      <Photos urls={urls}/>
+      <h2 styles={styles.h2}>{title}</h2>
+      <Photos urls={urls} styles={styles.img}/>
     </>
   );
 }
