@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import Header from './Header';
 import Footer from './Footer';
-import Photos from './Photos';
+import PhotoAlbum from './PhotoAlbum';
 import 'normalize.css';
 
 import pet1 from '../assets/IMG_0053.jpg';
@@ -15,7 +15,7 @@ function App() {
   return (
     <Fragment>
       <Header />
-      <Photos urls={allPets}/>
+      <PhotoAlbum photos={allPets} />
       <Footer />
     </Fragment>
   );
