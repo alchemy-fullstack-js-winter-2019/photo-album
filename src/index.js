@@ -16,13 +16,16 @@ import React from 'react';
 import { render } from 'react-dom';
 // import App from './components/App';
 // import AppTwo from './components/AppTwo';
-import AppThree from './components/AppThree';
+// import AppThree from './components/AppThree';
+import NewApp from './components/NewApp';
 
 render(
   // <App />, // this is 'jsx'
   // document.getElementById('root')
   // <AppTwo />,
   // document.getElementById('root')
-  <AppThree />,
+  // <AppThree />,
+  // document.getElementById('root')
+  <NewApp />,
   document.getElementById('root')
 );
