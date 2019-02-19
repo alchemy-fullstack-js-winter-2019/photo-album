@@ -1,9 +1,15 @@
 .footer {
   background: red;
-  border: 2px dashed purple;
-  font-family: Helvetica;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   text-align: center;
   p {
     color: green;
+    padding-top: 20px;
+  }
+  img {
+    width: 100px;
+    padding: 40px;
   }
 }
