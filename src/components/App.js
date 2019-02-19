@@ -1,16 +1,16 @@
 import React, { Fragment } from 'react';
 import Header from './Header';
 import Footer from './Footer';
-import Members from './Members';
+import Photos from './Photos';
 
 function App() {
-  const memberNames = ['Snoop', 'Kurupt', 'Daz'].map(name => {
+  const photoNames = ['Tha Dogg Pound', 'Warren G', 'Busta Rhymes'].map(name => {
     return <li key={name}>{name}</li>;
   });
   return (
     <Fragment>
       <Header/>
-      <Members members={memberNames}/>
+      <Photos photos={photoNames}/>
       <Footer/>
     </Fragment>
   );

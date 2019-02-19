@@ -4,7 +4,7 @@ import styles from './Header.css';
 function Header() {
   return (
     <header className={styles.header}>
-      <h1>Tha Dogg Pound</h1>
+      <h1>Old School Hip Hop</h1>
     </header>
   );
 }
