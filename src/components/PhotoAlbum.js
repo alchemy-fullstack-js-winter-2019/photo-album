@@ -2,11 +2,10 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import Photos from './Photos';
 
-
 function PhotoAlbum({ photos }) {
   return (
     <Fragment>
-      <h1>Superheroes</h1>
+      <h2>Photo Album</h2>
       <Photos urls={photos} />
     </Fragment>
   );

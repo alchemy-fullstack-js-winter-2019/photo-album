@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import Photo from './Photo';
 
@@ -10,13 +10,11 @@ function Photos({ urls }) {
       </li>
     );
   });
-  
+
   return (
-    <Fragment>
-      <ul>
-        <li>{listOfUrls}</li>
-      </ul>
-    </Fragment>
+    <ul>
+      {listOfUrls}
+    </ul>
   );
 }
 

@@ -4,8 +4,7 @@ import styles from '../css/Header.css';
 function Header() {
   return (
     <header className={styles.header}>
-      <h1>Superhero Photo Album</h1>
-      {/* <img src={}/> */}
+      <h1>Superheroes for Days</h1>
     </header>
   );
 }
