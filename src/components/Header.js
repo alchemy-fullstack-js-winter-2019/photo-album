@@ -5,7 +5,6 @@ function Header() {
   return (
     <header className={styles.header}>
     <h1>This is a photo site for the best noodles!</h1>
-    <img src={logo} />
     </header>
   )
 };

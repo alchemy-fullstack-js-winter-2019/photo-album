@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Photo from './Photo';
 
-function Photos(props) {
-  const listOfPhotos = ['Ramen', 'Pho', 'Spagetthi', 'LoMein', 'Udon'].map(name => {
-    return <li key={name}>{name}</li>;
+function Photos({ photos }) {
+  const listOfPhotos = photos.map(photo => {
+    return <li key={photo}><Photo url={photo} /></li>;
 });
   return (
     <ul>
-      <img src={noodles1} />
       {listOfPhotos}
     </ul>
   );
