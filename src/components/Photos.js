@@ -5,15 +5,13 @@ import Photo from './Photo';
 
 
 function Photos({ url }) {
-  url.map(name => {
-    const li = document.createElement('li');
-    li.textContent = name;
-    return <li key={name}>{name}</li>;
+  const urlList = url.map(url => {
+    return <li key={url}><Photo url={url} /></li>;
   });
   return (
-    <>
-      <Photo url={url}/>
-    </>
+    <ul>
+      <li>{urlList}</li>
+    </ul>
   );
 
 }

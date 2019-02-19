@@ -13,7 +13,7 @@ function Photo({ url }) {
 }
 
 Photo.propTypes = {
-  url: PropTypes.array.isRequired
+  url: PropTypes.string.isRequired
 };
 
 
