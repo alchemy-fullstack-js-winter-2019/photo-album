@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 function Photo({ url }) {
   return (
     <li>
-      <img src={url}/>
+      <img src={url} />
     </li>
   );
 }
