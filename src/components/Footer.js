@@ -1,8 +1,9 @@
 import React from 'react';
+import styles from './Footer.css';
 
 function Footer() {
   return (
-    <footer>Made by Tyler Corbett</footer>
+    <footer className={styles.footer}>Made by Tyler Corbett</footer>
   );
 }
 

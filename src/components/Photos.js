@@ -9,7 +9,9 @@ function Photos({ dogs }) {
   });
   return (
     <>
-    {listOfDogs}
+    <ul className={styles.ul}>
+      {listOfDogs}
+    </ul>
     </>
   );
 }
