@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Photo from './Photo';
+import styles from '../css/Photos.css';
 
 function Photos({ urls }) {
   console.log('photos', urls);
@@ -9,8 +10,7 @@ function Photos({ urls }) {
   });
 
   return (
-    <ul>
-      <li>I am the photos component</li>
+    <ul className={styles.ul}>
       <li>{listOfUrls}</li>
     </ul>
   );

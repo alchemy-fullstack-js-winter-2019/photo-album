@@ -8,9 +8,10 @@ import mercury from '../assets/mercury.jpg';
 import neptune from '../assets/neptune.jpg';
 import uranus from '../assets/uranus.jpg';
 import venus from '../assets/venus.jpg';
+import pluto from '../assets/pluto.png';
 
 function App() {
-  const planets = [jupiter, mercury, neptune, uranus, venus];
+  const planets = [mercury, neptune, uranus, venus, pluto, jupiter];
   return (
     <Fragment>
       <Header />

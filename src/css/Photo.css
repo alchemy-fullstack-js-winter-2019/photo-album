@@ -1,0 +1,8 @@
+.li {
+  img {
+    height: 300px;
+  }
+  img:hover {
+    height: 500px;
+  }
+}
