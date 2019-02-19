@@ -3,8 +3,14 @@
   color: white;
 
   h1 {
+    font-size: 55px;
     color: white;
   }
+
+  img {
+    height: 100px;
+  }
+
 }
 
 

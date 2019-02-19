@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import dogs1 from '../assets/dogs1.jpg';
 
 function Dogs(props) {
   const listOfDogs = ['Scruffy', 'Buddy', 'Coco', 'Milo', 'Jack'].map(name => {
@@ -7,6 +8,7 @@ function Dogs(props) {
 });
   return (
     <ul>
+      <img src={dogs1} />
       {listOfDogs}
     </ul>
   );
