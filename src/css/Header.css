@@ -1,7 +1,17 @@
 .header {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 30px;
-  background-color: olivedrab;
-  border-color: black;
+  background-color: blue;
+  border-color: yellow;
   padding: 30px;
+}
+
+h1 {
+  color: yellow;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+p{
+  color: blue;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }

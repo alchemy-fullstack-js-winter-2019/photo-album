@@ -3,7 +3,7 @@ import React from 'react';
 function Footer() {
   return (
     <Footer>
-      <h2>WKC 2019</h2>
+      <h2>Jei Shepherd</h2>
     </Footer>
   );
 }

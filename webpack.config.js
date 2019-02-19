@@ -1,4 +1,5 @@
 const HtmlPlugin = require('html-webpack-plugin');
+const CleanPlugin = require('clean-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -8,9 +9,9 @@ module.exports = {
   devServer: {
     port: 7890
   },
-  devtool: 'source-map',
   plugins: [
-    new HtmlPlugin({ template: './src/index.html' })
+    new HtmlPlugin({ template: './src/index.html' }),
+    new CleanPlugin('./dist')
   ],
   module: {
     rules: [
@@ -53,7 +54,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.jpeg|\.jpg/,
+        test: /\.(jpeg|jpg|png|svg)$/,
         use: {
           loader: 'url-loader',
           options: { limit: 1000 },
