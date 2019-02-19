@@ -1,16 +1,16 @@
 import React, { Fragment }from 'react';
 import Header from './Header';
-import Dogs from './Dogs';
+import Photos from './Photos';
 import Footer from './Footer';
 import 'normalize.css';
 
 function App() {
-  const dogNames = ['Scruffy', 'Buddy', 'Coco', 'Milo', 'Jack'];
+  const photoNames = ['Ramen', 'Pho', 'Spagetthi', 'LoMein', 'Udon'];
 
   return (
     <Fragment>
       <Header />
-      <Dogs dogs={dogNames} />
+      <Photos photos={photoNames} />
       <Footer />
   </Fragment>
   );
