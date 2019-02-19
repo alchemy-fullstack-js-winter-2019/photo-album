@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Header/>
-      <PhotoAlbum title='Dogs' url={photoURL}/>
+      <PhotoAlbum title='Bulldogs' url={photoURL}/>
       <Footer />
     </>
   );
