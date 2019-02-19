@@ -53,11 +53,11 @@ module.exports = {
         ]
       },
       {
-        test: /\.jpg|\.png/,
+        test: /\.jpeg|\.png/,
         use: {
           loader: 'url-loader',
-          options: { limit: 100 }
-        }
+          options: { limit: 1000 },
+        },
       }
     ]
   }
