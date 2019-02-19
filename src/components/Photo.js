@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from '../css/Photo.css';
+import '../css/Photo.css';
 
 function Photo({ url }) {
   return (
-    <li className={styles.pic}>
+    <span>
       <img src={url}/>
-    </li>
+    </span>
   );
 }
 

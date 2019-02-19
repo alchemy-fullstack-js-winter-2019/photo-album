@@ -1,17 +1,32 @@
 .header {
-  background: yellow;
-  font-family: 'montserrat';
+  
+  font-family: 'Staatliches';
   text-align: center;
-  padding: 0;
+  padding: 30px;
   margin: 0;
   h1 {
-    color: black;
+    color: white;
     padding: 15px;
     margin: 0px;
-    font-size: 4em;
+    font-size: 6em;
+    text-shadow: 5px 5px black;
+
   }
   img {
     left: 10px;
     height: 6em;
   }
+}
+
+.header::after {
+  background-image: url('../assets/backgroundcollage.jpg');
+  background-repeat: repeat-x;
+  content: "";
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;  
 }
