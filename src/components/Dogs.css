@@ -1,9 +1,0 @@
-.dogs {
-  background: green;
-  padding: 10px;
-  font-family: Helvetica;
-  li {
-    list-style: none;
-    outline: 1px solid red;
-  }
-}

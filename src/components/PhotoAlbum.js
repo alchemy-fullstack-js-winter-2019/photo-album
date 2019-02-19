@@ -17,7 +17,7 @@ function PhotoAlbum({ title, urls }) {
   );
 }
 
-PhotoAlbum.proptypes = {
+PhotoAlbum.propTypes = {
   title: PropTypes.string.isRequired,
   urls: PropTypes.array.isRequired
 };
