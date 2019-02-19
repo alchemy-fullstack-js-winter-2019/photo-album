@@ -1,19 +1,18 @@
 import React from 'react';
 import Footer from './Footer';
 import Header from './Header';
+import 'normalize.css';
 
-import portland from '../../imgs/portland.jpg';
-import austin from '../../imgs/Austin.jpg';
+import Photoalbum from './Photoalbum';
 import 'normalize.css';
 
 
 function App() {
-  const cities = [portland, austin];
-  const albumName = 'topCities';
+  // const cities = [portland, austin];
   return (
     <fragment >
       <Header />
-      <photoAlbum cities={cities} albumName={albumName}/>
+      <Photoalbum /> 
       <Footer />
     </fragment>
   );
