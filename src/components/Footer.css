@@ -1,8 +1,9 @@
 .footer {
-  background-color: green;
+  background-color: lightsteelblue;
   color: white;
 
   p {
-    color: blue;
+    color: red;
+    text-align: center;
   }
 }
