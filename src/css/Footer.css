@@ -1,0 +1,10 @@
+footer {
+  background-color: rgb(9, 9, 79);
+  color: white;
+  text-align: center;
+  font-family: 'montserrat';
+  padding: 35px;
+  img {
+    height: 3em;
+  }
+}
