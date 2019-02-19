@@ -1,5 +1,7 @@
 .main {
   padding: 20px;
+  background: black;
+  color: white;
   h1 {
     font-family: monospace; 
     text-transform: uppercase;
