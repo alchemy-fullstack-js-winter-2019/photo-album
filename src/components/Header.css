@@ -1,8 +1,9 @@
 .header {
     background-color: black;
     color: white;
-
+    display: block;
     h1 {
-        color: red;
+        margin: 0;
+        padding: 2vw;
     }
 }
