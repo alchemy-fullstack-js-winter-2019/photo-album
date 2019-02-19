@@ -9,7 +9,7 @@ function Header() {
       <header className={styles.header}>
         <h2> Wanderlust </h2>
       </header>
-      <div> 
+      <div className={styles.div}> 
         <FaGithub id="icon" /> 
         <FaLinkedin id="icon" />
         <FaTwitter id="icon" />

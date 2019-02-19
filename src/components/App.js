@@ -1,14 +1,15 @@
 import React, { Fragment } from 'react';
 import Footer from './Footer';
 import Header from './Header';
-import Main from './Main';
+import PhotoAlbum from './PhotoAlbum';
 import styles from '../css/App.css';
 
 function App() {
   return (
     <Fragment className={styles}> 
       <Header />
-      <Main />
+      <PhotoAlbum
+        title='Dream Places'/>
       <Footer />
     </Fragment>
   );
