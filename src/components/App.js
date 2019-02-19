@@ -1,7 +1,8 @@
 import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
-import Photos from './Photos';
+// import Photos from './Photos';
+import PhotoAlbum from './PhotoAlbum';
 import Indy from '../assets/Indy.jpg';
 import Lady from '../assets/Lady.jpg';
 import Bandit from '../assets/Bandit.jpg';
@@ -13,10 +14,11 @@ import Murphy from '../assets/Murphy.jpg';
 
 function App() {
   const pics = [Indy, Lady, Bandit, Jasmine, Poika, Murphy];
+  const name = 'My Dogs';
   return (
     <>
       <Header />
-      <Photos photos={pics} />
+      <PhotoAlbum title= {name} photos={pics} />
       <Footer />
     </>
   );
