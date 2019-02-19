@@ -1,15 +1,11 @@
 .header {
-  background-color: gray;
-  color: teal;
-  text-align: center;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
 
   h1 {
     font-family: 'Montserrat';
-    color: orange;
-  }
-
-  img {
-    max-height: 100px;
+    color: teal;
   }
 }
 

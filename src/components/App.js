@@ -10,8 +10,6 @@ import Jasmine from '../assets/Jasmine.jpg';
 import Poika from '../assets/Poika.jpg';
 import Murphy from '../assets/Murphy.jpg';
 
-
-
 function App() {
   const pics = [Indy, Lady, Bandit, Jasmine, Poika, Murphy];
   const name = 'My Dogs';

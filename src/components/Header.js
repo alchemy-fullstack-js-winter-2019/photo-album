@@ -1,12 +1,11 @@
 import React from 'react';
 import styles from './Header.css';
-import logo from '../assets/logo.jpg';
+import logo from '../assets/dogbone.png';
 
 function Header() {
   return (
     <header className={styles.header}>
-      <img src={logo} />
-      <h1>Teonnas Dogs</h1>
+      <h1>Dogs for Days</h1>
     </header>
   );
 }

@@ -1,6 +1,6 @@
 .photo {
   img {
-   width: 100px;
-    
+    min-width: 175px;
+    height: 250px;
   }
 }
