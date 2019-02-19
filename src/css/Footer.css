@@ -7,3 +7,15 @@
 h2 {
   padding: 20px;
 }
+
+@media only screen and (max-width: 375px) {
+  h2 {
+    padding-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  h2 {
+    padding-left: 10px;
+  }
+}

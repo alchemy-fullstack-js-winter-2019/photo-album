@@ -10,4 +10,26 @@
 div {
   font-size: 20px;
   margin: 20px;
+  color: rgb(121, 121, 121);
+}
+
+
+@media only screen and (max-width: 375px) {
+  div {
+    margin: 5px;
+  }
+  .header {
+    font-size: 20px;
+    padding-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  div {
+    margin: 10px;
+  }
+  .header {
+    font-size: 20px;
+    padding-left: 10px;
+  }
 }

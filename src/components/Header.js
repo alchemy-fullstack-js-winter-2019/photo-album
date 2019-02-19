@@ -8,12 +8,12 @@ function Header() {
     <section>
       <header className={styles.header}>
         <h1> Wanderlust </h1>
+        <div className={styles.div}> 
+          <FaGithub id="icon" className="icon"/>
+          <FaLinkedin id="icon" className="icon" /> 
+          <FaTwitter id="icon"  className="icon"/>
+        </div>
       </header>
-      <div className={styles.div}> 
-        <FaGithub id="icon" /> 
-        <FaLinkedin id="icon" />
-        <FaTwitter id="icon" />
-      </div>
     </section>
   );
 }
