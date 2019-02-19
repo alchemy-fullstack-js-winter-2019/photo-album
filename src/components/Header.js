@@ -6,7 +6,7 @@ function Header() {
   return (
     <header className={styles.header}>
       <img src={logo} />
-      <h1>Awesome amazing super site</h1>
+      <h1>Only the pretty planets plz</h1>
     </header>
   );
 }

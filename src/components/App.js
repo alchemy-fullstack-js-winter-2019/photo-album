@@ -1,15 +1,14 @@
 import React, { Fragment } from 'react';
 import Header from './Header';
+import PhotoAlbum from './PhotoAlbum';
 import Footer from './Footer';
-import Dogs from './Main';
 import 'normalize.css';
 
 function App() {
-  const dogNames = ['Penelope', 'Peppa', 'Pepperoni', 'Pineapple', 'Perogi'];
   return (
     <Fragment>
       <Header />
-      <Dogs dogs={dogNames} />
+      <PhotoAlbum />
       <Footer />
     </Fragment>
   );
