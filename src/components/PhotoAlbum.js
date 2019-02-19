@@ -1,21 +1,19 @@
 import React from 'react';
 import Photos from './Photos';
 import styles from '../css/PhotoAlbum.css';
-import jupiter from '../assets/jupiter.jpg';
-import mercury from '../assets/mercury.jpg';
-import neptune from '../assets/neptune.jpg';
-import uranus from '../assets/uranus.jpg';
-import venus from '../assets/venus.jpg';
+import PropTypes from 'prop-types';
 
-function PhotoAlbum() {
-  const planets = [jupiter, mercury, neptune, uranus, venus];
-  console.log(planets);
+function PhotoAlbum({ photos }) {
   return (
     <main className={styles.main}>
       <h2>planetz</h2>
-      <Photos urls={planets}/>
+      <Photos urls={photos}/>
     </main>
   );
 }
+
+PhotoAlbum.propTypes = {
+  photos: PropTypes.array.isRequired
+};
 
 export default PhotoAlbum;
