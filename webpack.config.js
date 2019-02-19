@@ -53,7 +53,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.jpeg|\.png/,
+        test: /\.jpeg|\.jpg/,
         use: {
           loader: 'url-loader',
           options: { limit: 1000 },

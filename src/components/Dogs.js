@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import dog1 from '../assets/dog1';
-import dog2 from '../assets/dog2';
-import dog3 from '../assets/dog3';
-import dog4 from '../assets/dog4';
-import dog5 from '../assets/dog5';
-import dog6 from '../assets/dog6';
+import dog1 from '../assets/dog1.jpg';
+import dog2 from '../assets/dog2.jpg';
+import dog3 from '../assets/dog3.jpg';
+import dog4 from '../assets/dog4.jpg';
+import dog5 from '../assets/dog5.jpeg';
+import dog6 from '../assets/dog6.jpg'; 
 
 function Dogs({ dogs }) {
   const listOfDogs = dogs.map(name => {

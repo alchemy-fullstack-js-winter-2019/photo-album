@@ -7,7 +7,6 @@ import 'normalize.css';
 
 function App() {
   const dogNames = ['dog1', 'dog2', 'dog3', 'dog4', 'dog5', 'dog6'];
- 
   return (
     <Fragment>
       <Header />
