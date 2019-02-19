@@ -1,15 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Photo from './Photo';
+import styles from './Photos.css';
 
 
 function Photos({ photos }) {
   const listOfPhotos = photos.map(photo => {
-    return <Photo url={photo} />
+    return <Photo url={photo} key={photo} />;
   });
 
   return (
-    <ul>{listOfPhotos}</ul>
+    <ul className={styles.ul}>{listOfPhotos}</ul>
   );
 }
 Photos.propTypes = {

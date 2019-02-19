@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './Photo.css';
 
 function Photo({ url }) {
   return (
-    <li>
+    <li className={styles.photo}>
       <img src={url} />
     </li>
   );
