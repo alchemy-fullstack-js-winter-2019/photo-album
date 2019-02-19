@@ -1,0 +1,10 @@
+.photos {
+  list-style-type: none;
+  padding-left: 550px;
+
+  li {
+    padding-top: 20px;
+    font-family: cursive;
+    font-size: 24px;
+  }
+}
