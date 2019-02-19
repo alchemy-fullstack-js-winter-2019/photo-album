@@ -10,7 +10,7 @@ import udon from '../assets/udon.jpg';
 
 
 function App() {
-  const photos = [pho, ramen, spagetthi, udon]
+  const photos = [pho, ramen, spagetthi, udon];
   return (
     <Fragment>
       <Header />
