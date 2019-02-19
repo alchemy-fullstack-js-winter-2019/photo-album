@@ -5,6 +5,8 @@
   "main": "index.js",
   "dependencies": {
     "nodemon": "^1.18.10",
+    "normalize.css": "^8.0.1",
+    "normalizecss": "^3.0.0",
     "react": "^16.8.2",
     "react-dom": "^16.8.2"
   },

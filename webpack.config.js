@@ -49,13 +49,20 @@ module.exports = {
             loader: 'postcss-loader',
             options: {
               sourceMap: true,
-              plugin: [
+              plugins: [
                 require('autoprefixer')(),
                 require('postcss-nested')()
               ]
             }
           }
         ]
+      },
+      {
+        test: /\.(jpg|png|svg)$/,
+        use: {
+          loader: 'url-loader',
+          options: { limit: 1000 },
+        }
       }
     ]
   }
