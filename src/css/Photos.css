@@ -1,0 +1,28 @@
+li {
+  list-style: none;
+  position: relative;
+  width: 200px;
+  height: 350px;
+  border: 3px solid white;
+  text-align: center;
+  margin: 20px 30px;
+  padding: 0px 20px;
+  img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: 3px 3px white;
+  }
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: horizontal;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
