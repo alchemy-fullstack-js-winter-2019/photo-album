@@ -15,10 +15,11 @@ import dog6 from '../assets/dog6.jpeg';
 
 function App() {
   const dogs = [dog, dog2, dog3, dog4, dog5, dog6];
+  const albumName = 'Dawgz';
   return (
     <>
       <Header />
-      <PhotoAlbum dogs={dogs}/>
+      <PhotoAlbum dogs={dogs} albumName={albumName}/>
       <Footer />
     </>
   );
