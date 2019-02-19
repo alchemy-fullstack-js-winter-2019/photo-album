@@ -9,7 +9,7 @@ import dog3 from '../assets/dog3.jpeg';
 import dog4 from '../assets/dog4.jpeg';
 import dog5 from '../assets/dog5.jpeg';
 import dog6 from '../assets/dog6.jpeg';
-
+import './App.css';
 
 
 
