@@ -7,5 +7,3 @@ render(
   document.getElementById('root')
  
 );
-
-

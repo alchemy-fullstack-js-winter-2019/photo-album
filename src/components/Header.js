@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './Header.css';
-import logo from '../assets/dogbone.png';
 
 function Header() {
   return (
