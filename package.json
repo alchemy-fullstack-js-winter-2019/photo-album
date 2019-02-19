@@ -13,11 +13,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "aos": "^3.0.0-beta.6",
     "clean-webpack-plugin": "^1.0.1",
     "jsx": "^0.9.89",
     "normalize.css": "^8.0.1",
     "react": "^16.8.2",
-    "react-dom": "^16.8.2"
+    "react-animate-on-scroll": "^2.1.5",
+    "react-dom": "^16.8.2",
+    "react-icons": "^3.4.0",
+    "wow.js": "^1.2.2"
   },
   "devDependencies": {
     "@babel/core": "^7.3.3",
