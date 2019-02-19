@@ -1,12 +1,12 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './Photo.css'
+import styles from './Photo.css';
 
 function Photo({ beach }) {
     return (
-        <Fragment className={styles.img}>
+        <div className={styles.img}>
             <img src={beach}/>
-        </Fragment>
+        </div>
     );
 }
 Photo.propTypes = {

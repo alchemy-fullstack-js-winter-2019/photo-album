@@ -1,0 +1,16 @@
+
+ul {
+    background: black;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+}
+li {
+    margin: 1px;
+    padding: 10px;
+}
