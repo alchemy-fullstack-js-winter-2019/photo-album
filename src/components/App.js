@@ -8,15 +8,16 @@ import ramen from '../assets/ramen.jpg';
 import spagetthi from '../assets/spagetthi.jpg';
 import udon from '../assets/udon.jpg';
 
-const photoList = ['pho', 'ramen', 'spagetthi', 'udon'];
+
 function App() {
+  const photos = [pho, ramen, spagetthi, udon]
   return (
     <Fragment>
       <Header />
-      <PhotoAlbum />
+      <PhotoAlbum urls={photos} />
       <Footer />
   </Fragment>
   );
-}
+} 
 
 export default App;
