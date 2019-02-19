@@ -1,9 +1,10 @@
 import React from 'react';
+import styles from './Header.css';
 
 function Header() {
   return (
-    <header>
-      <h1>My Site</h1>
+    <header className = >
+      <h1>Dawgz</h1>
     </header>
   );
 }
