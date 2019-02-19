@@ -9,4 +9,4 @@ This is a simple React app to practice components and prop passing. Superhero th
 ### Start the App on Local Host
 *npm run start*
 
-![image of app](app.png)
+![image of app](mockup.png)
