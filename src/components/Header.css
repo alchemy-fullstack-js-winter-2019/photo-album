@@ -1,0 +1,14 @@
+.header {
+  background-color: cyan;
+  font-weight: bold;
+  font-family: Helvetica;
+  text-align: center;
+  h1 {
+    color: red;
+    background: yellow;
+  }
+  img {
+    width: 100px;;
+    padding-top: 20px;
+  }
+}
