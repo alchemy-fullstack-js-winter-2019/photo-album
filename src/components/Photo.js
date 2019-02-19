@@ -1,8 +1,9 @@
 import React from 'react';
+import Indy from '../assets/Indy.jpg';
 
-function Photo(url) {
+function Photo() {
   return (
-    <img src={url} />
+    <img src={Indy}/>
   );
 }
 
