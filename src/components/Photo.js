@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import styles from './Photo.css';
 
 function Photo({ dog }) {
   return (
-    <img src={ dog } />
+    <img src={ dog } className={styles.img}/>
   );
 }
 

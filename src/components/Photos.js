@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Photo from './Photo';
+import styles from './Photos.css';
 
 function Photos({ dogs }) {
   const listOfDogs = dogs.map(dog => {
-    return <li key={dog}><Photo dog={ dog }/></li>;
+    return <li key={dog} className={styles.li} ><Photo dog={ dog }/></li>;
   });
   return (
     <>
