@@ -1,0 +1,10 @@
+.album {
+  list-style: none;
+  border: solid black 1px;
+  h1 {
+    font-family: 'Montserrat';
+    color: orange;
+    display: flex;
+    justify-content: center;
+  }
+}
