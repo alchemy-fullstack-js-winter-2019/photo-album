@@ -1,10 +1,17 @@
 import React from 'react';
-import Indy from '../assets/Indy.jpg';
+import PropTypes from 'prop-types';
 
-function Photo() {
+function Photo({ url }) {
   return (
-    <img src={Indy}/>
+    <li>
+      <img src={url} />
+    </li>
   );
 }
+
+Photo.propTypes = {
+  url: PropTypes.string.isRequired
+};
+
 
 export default Photo;

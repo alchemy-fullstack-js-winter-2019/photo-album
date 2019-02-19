@@ -6,7 +6,7 @@ function Header() {
   return (
     <header className={styles.header}>
       <img src={logo} />
-      <h1>Teonna's Dogs</h1>
+      <h1>Teonnas Dogs</h1>
     </header>
   );
 }

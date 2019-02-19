@@ -1,14 +1,19 @@
 import React from 'react';
 import Header from './Header';
-import Photo from './Photo';
 import Footer from './Footer';
+import Photos from './Photos';
+import Indy from '../assets/Indy.jpg';
+import Lady from '../assets/Lady.jpg';
+import 
+
 
 
 function App() {
+  const pics = [Indy, Lady];
   return (
     <>
       <Header />
-      <Photo />
+      <Photos photos={pics} />
       <Footer />
     </>
   );
