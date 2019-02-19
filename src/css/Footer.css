@@ -7,10 +7,18 @@
 h2 {
   padding: 20px;
 }
-
+a {
+  color:  rgb(121, 121, 121);
+  text-decoration: none;
+}
 @media only screen and (max-width: 375px) {
   h2 {
     padding-left: 10px;
+    background: green;
+  }
+  a {
+    color:  rgb(121, 121, 121);
+    text-decoration: none;
   }
 }
 
