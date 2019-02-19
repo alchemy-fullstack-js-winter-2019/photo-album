@@ -7,7 +7,7 @@ function Header() {
   return (
     <section>
       <header className={styles.header}>
-        <h2> Wanderlust </h2>
+        <h1> Wanderlust </h1>
       </header>
       <div className={styles.div}> 
         <FaGithub id="icon" /> 

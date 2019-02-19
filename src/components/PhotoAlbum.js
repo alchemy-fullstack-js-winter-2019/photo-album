@@ -6,7 +6,7 @@ import propTypes from 'prop-types';
 function PhotoAlbum({ title }) { 
   return (
     <div>
-      <h2> {title} </h2>
+      <h3> {title} </h3>
       <Photos />
     </div>
   );
