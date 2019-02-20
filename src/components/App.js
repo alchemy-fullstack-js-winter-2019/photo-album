@@ -22,7 +22,7 @@ function App() {
   return (
     <Fragment>
       <Header/>
-      <PhotoAlbum urls={photoNames}/>
+      <PhotoAlbum photos={photoNames}/>
       <Footer/>
     </Fragment>
   );
