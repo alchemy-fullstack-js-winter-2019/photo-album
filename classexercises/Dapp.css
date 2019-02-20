@@ -1,0 +1,5 @@
+//this will make a global change
+:global(*) { 
+  box-sizing: boarder;
+  padding: 0;
+}
