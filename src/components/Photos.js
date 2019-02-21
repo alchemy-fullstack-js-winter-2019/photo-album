@@ -4,12 +4,12 @@ import Photo from './Photo';
 
 function Photos({ photos }) {
   const listOfPhotos = photos.map(photo => {
-    return (<li key={photo}><Photo url={photo} /></li>);
-});
+    return (<li key={photo}><Photo photo={photo} /></li>);
+  });
   return (
-    <ul>
+    <div>
       {listOfPhotos}
-    </ul>
+    </div>
   );
 }
 //specify PropTypes to export
