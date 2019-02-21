@@ -1,0 +1,12 @@
+import React from 'react';
+import styles from './Header.css';
+
+function Header() {
+  return (
+    <header className={styles.header}>
+      <h1>List of Dogs</h1>
+    </header>
+  );
+}
+
+export default Header;
