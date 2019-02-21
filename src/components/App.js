@@ -9,13 +9,14 @@ import dog3 from '../assets/dog3.jpg';
 import dog4 from '../assets/dog4.jpg';
 import dog5 from '../assets/dog5.jpeg';
 import dog6 from '../assets/dog6.jpg';
+import dog7 from '../assets/dog7.jpg';
 
 function App() {
-  const photos = [dog1, dog2, dog3, dog4, dog5, dog6];
+  const photos = [dog1, dog2, dog3, dog4, dog5, dog6, dog7];
   return (
     <Fragment>
       <Header />
-      <PhotoAlbum photos={photos}/>
+      <PhotoAlbum photos={photos} />
       <Footer />
     </Fragment>
   );

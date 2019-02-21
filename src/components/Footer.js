@@ -2,9 +2,9 @@ import React from 'react';
 
 function Footer() {
   return (
-    <Footer>
-      <h2>Jei Shepherd</h2>
-    </Footer>
+    <footer>
+      <h2>This site produced by Jei Shepherd</h2>
+    </footer>
   );
 }
 

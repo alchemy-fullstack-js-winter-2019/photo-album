@@ -4,9 +4,9 @@ import '../css/Photo.css';
 
 function Photo({ url }) {
   return (
-    <span>
+    <div>
       <img src={url}/>
-    </span>
+    </div>
   );
 }
 

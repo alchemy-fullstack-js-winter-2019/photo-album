@@ -6,7 +6,6 @@ import Photos from './Photos';
 function PhotoAlbum({ photos }) {
   return (
     <div className={styles.album}>
-      <h2>Best In Show</h2>
       <Photos urls={photos} />
     </div>
   );
