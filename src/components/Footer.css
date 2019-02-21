@@ -1,0 +1,13 @@
+.footer {
+  background: orange;
+  
+  text-align: center;
+  p {
+    color: white;
+    font-size: 40px;
+  }
+  img {
+    width: 100px;
+    padding: 40px;
+  }
+}

@@ -1,0 +1,17 @@
+.header {
+  background-color: orange;
+  color: white;
+  text-align: center;
+
+  h1 {
+    color: white;
+    font-size: 40px;
+  }
+  img {
+    width: 150px;
+    padding: 0;
+   
+  }
+}
+
+
