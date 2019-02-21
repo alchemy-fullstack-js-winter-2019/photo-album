@@ -1,0 +1,7 @@
+.urls {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: 200px;
+  margin-right: 100px;
+}
