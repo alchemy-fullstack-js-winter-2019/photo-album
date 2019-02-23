@@ -1,18 +1,28 @@
 import React from 'react';
-import portland from '../../imgs/portland.jpg';
-import Austin from '../../imgs/Austin.jpg';
+import Photo from './Photo';
+import PropTypes from 'prop-types';
+
+// import portland from '../../imgs/portland.jpg';
+// import Austin from '../../imgs/Austin.jpg';
 
 
-function Photos() {
+function Photos({ url }) {
+  const photoLi = url.map(url => {
+    return (
+      <li key={url}><Photo url={url} /> </li>
+    );
+  });
 
   return (
-    <ul>
-      <img src={portland} />
-      <img src={Austin} />
-    </ul>
+    <ul>{photoLi}</ul>
+  
   );
 
 }
+
+Photos.propTypes = {
+  url: PropTypes.array.isRequired
+};
 
 
 export default Photos;
@@ -20,9 +30,9 @@ export default Photos;
 
 
 //after line 7
-  // const cityList = cities.map(name => {
-  //   return <li key={name}>{name}</li>;
-  // });
+// const cityList = cities.map(name => {
+//   return <li key={name}>{name}</li>;
+// });
 
 //after line 16
 // Cities.propTypes = {
@@ -30,4 +40,4 @@ export default Photos;
 // };
 
 
-   //this went under line 14  {listOfCities}
+//this went under line 14  {listOfCities}

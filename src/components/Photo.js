@@ -1,33 +1,42 @@
 import React from 'react';
-import 'normalize.css';
+import PropTypes from 'prop-types';
+// import 'normalize.css';
 
-function Photo(){
+function Photo({ url }){
   return (
-    <li>
-      <img src = {city} />
-    </li>
+    <ul>
+      <li>
+        <img src={url} />
+      </li>
+    </ul>
   );
 }
+
+Photo.prototype = {
+  url: PropTypes.string.isRequired
+};
+
+export default Photo;
 
 ////////////////////
-function App() {
-  const photos = [tree1, tree2];
-  return (
-    <PhotoAlbum title="Cities" photos={photos} />
-  );
-}
+// function App() {
+//   const photos = [tree1, tree2];
+//   return (
+//     <PhotoAlbum title="Cities" photos={photos} />
+//   );
+// }
 
-function PhotoAlbum({ title, photos }) {
-  return (
-   <>
-    <h2>{title}</h2>
-    <Photos photos={photos} />
-   </>
-  )
-}
+// function PhotoAlbum({ title, photos }) {
+//   return (
+//    <>
+//     <h2>{title}</h2>
+//     <Photos photos={photos} />
+//    </>
+//   )
+// }
 
-function Photo({ photos }) {
-  photos.map(photo => {
-    return <Photo
-  })
-}
+// function Photo({ photos }) {
+//   photos.map(photo => {
+//     return <Photo
+//   })
+// }
