@@ -7,7 +7,7 @@ function PhotoAlbum({ title, url }) {
   return (
     <section>
       <h2>{title}</h2>
-      <Photos url = { url } />
+      <Photos  url={url} />
     </section>
   );
 }

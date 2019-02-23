@@ -22,7 +22,7 @@ function App() {
   return (
     <>
       <Header />
-      <PhotoAlbum title='cities' url={url}/> 
+      <PhotoAlbum title='Top Cities to Visit' url={url}/> 
       <Footer />
     </>
   );

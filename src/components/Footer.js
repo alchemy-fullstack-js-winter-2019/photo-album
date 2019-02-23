@@ -3,7 +3,7 @@ import React from 'react';
 function Footer() {
   return (
     <footer>
-      <h1>These Cities are subject to change</h1>
+      <h3>These Cities are subject to change</h3>
     </footer>
 
 
