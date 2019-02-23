@@ -15,7 +15,6 @@ function Photos({ url }) {
 
   return (
     <ul>{photoLi}</ul>
-  
   );
 
 }
