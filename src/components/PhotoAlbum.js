@@ -7,7 +7,7 @@ import styles from './PhotoAlbum.css';
 function PhotoAlbum({ urls }) {
 
   return (
-    <div className={styles.div}>
+    <div className={styles.album}>
       <h1 >PhotoAlbum</h1>
       <Photos urls={urls} />
     </div>

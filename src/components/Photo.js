@@ -9,7 +9,7 @@ function Photo({ url }){
 }
 
 Photo.propTypes = {
-  photo:PropTypes.array.isRequired
+  url: PropTypes.string.isRequired
 };
 
 export default Photo;
