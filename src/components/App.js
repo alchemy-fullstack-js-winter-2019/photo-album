@@ -22,7 +22,7 @@ import peopleSitting from '../assets/superchill.jpg';
 
 
 function App() {
-  const photos = [dolls, riceKrispies, cannonBeach, shopper, phoneCall, painter, illustrator, setDesigner, musicians, hiphop, singer, pigeons, bubblegum, singertoo, peopleSitting];
+  const photos = [ cannonBeach, shopper, phoneCall, painter, illustrator, dolls, setDesigner, riceKrispies, musicians, hiphop, singer, pigeons, bubblegum, singertoo, peopleSitting];
   return (
     <Fragment>
       <Header />

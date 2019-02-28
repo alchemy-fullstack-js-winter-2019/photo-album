@@ -1,12 +1,13 @@
 import React from 'react';
+import styles from '../css/Header.css';
 
 
 
 
 function Header() {
   return (
-    <header>
-      <h1>Photo Album</h1>
+    <header className={styles.header}>
+      <h1>Simple React Photo Album</h1>
     </header>
   );
 }

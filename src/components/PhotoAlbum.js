@@ -1,19 +1,20 @@
 import React from 'react';
 import Photos from './Photos';
 import PropTypes from 'prop-types';
+import styles from '../css/PhotoAlbum.css';
 
-function PhotoAlbum({ title, photos }) {
+function PhotoAlbum({ photos }) {
   return (
-    <main>
+    <main className={styles.main}>
       <h2>Michael Elliott Photography</h2>
-      <h3>{title}</h3>
-      <Photos urls={photos}/>
+      <div className={styles.grid}>
+        <Photos urls={photos}/>
+      </div>
     </main>
   );
 }
 
 PhotoAlbum.propTypes = {
-  title: PropTypes.string.isRequired,
   photos: PropTypes.array.isRequired
 };
 
