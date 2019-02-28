@@ -1,7 +1,7 @@
 import React from 'react';
 import Photo from './Photo';
 import PropTypes from 'prop-types';
-
+import styles from '../css/Photos.css';
 
 function Photos({ urls }) {
   const listOfUrls = urls.map(url => {
@@ -9,7 +9,7 @@ function Photos({ urls }) {
   });
 
   return (
-    <ul>
+    <ul className={styles.ul}>
       <li>{listOfUrls}</li>
     </ul>
   );
