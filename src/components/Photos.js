@@ -4,9 +4,10 @@ import Photo from './Photo';
 import styles from '../css/Photos.css';
 
 function Photos({ urls }) {
-  console.log('photos', urls);
   const listOfUrls = urls.map(url => {
-    return <li key={url}><Photo url={url} /></li>;
+    return <li key={url}>
+      <Photo url={url} />
+    </li>;
   });
 
   return (
