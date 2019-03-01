@@ -1,4 +1,4 @@
-# Planet Photo Album
+# Planet Photo Album ✨
 
 First static React build showcasing some pretty planets from our lovely galaxy. (Yes, I included Pluto.) 
 
@@ -17,11 +17,11 @@ Fork this repository, npm i to install all required node modules.
 
 ## Built With
 
-* [React](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+* [React](https://reactjs.org/docs/getting-started.html)
 
 ## Authors
 
-* **Paige Gorry** - *Initial work* - [Github](https://github.com/paigeegorry)
+* **Paige Gorry** [Github](https://github.com/paigeegorry)
 
 ## License
 
