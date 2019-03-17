@@ -13,7 +13,7 @@ Fork this repository, npm i to install all required node modules.
 
 ## Deployment
 
-(Check it out on netlify!)[https://vigilant-stonebraker-f8104c.netlify.com/]
+[Check it out on netlify!](https://vigilant-stonebraker-f8104c.netlify.com/)
 
 ## Built With
 
