@@ -1,0 +1,12 @@
+.footer {
+  background-image: url('../assets/galaxy.jpg');
+  padding: 20px;
+  color: white;
+  font-family: sans-serif;
+  text-shadow: 2px 2px black;
+
+  img {
+    display: block;
+    height: 100px;
+  }
+}
