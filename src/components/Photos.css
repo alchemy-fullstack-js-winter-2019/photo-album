@@ -1,0 +1,18 @@
+.photos {
+  list-style-type: none;
+  padding-left: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 100px;
+
+  li {
+    padding-top: 20px;
+    font-family: cursive;
+    font-size: 24px;
+  }
+
+  img {
+    height: 200px;
+    width: 250px;
+  }
+}

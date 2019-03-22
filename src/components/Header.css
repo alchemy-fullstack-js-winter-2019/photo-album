@@ -1,0 +1,13 @@
+.header {
+  background-color: #808080;
+  font-style: italic;
+  text-align: center;
+  height: 100px;
+  padding-top: 20px;
+
+  h2 {
+    color: black;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    font-size: 48px;
+  }
+}

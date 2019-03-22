@@ -1,0 +1,14 @@
+.footer {
+  background-color: #808080;
+  color: white;
+  font-style: bold;
+  text-align: center;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h5 {
+    margin-top: 40px;
+  }
+}
