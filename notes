@@ -1,0 +1,5 @@
+-Proptypes are not necessary but helpful for developers to know what kind of value to use in a function with a parameter. 
+
+-COMPONENTS every object that stands by itself will need a compoent. 
+
+-List and keys are helpful for list items are its unique identifigy 
